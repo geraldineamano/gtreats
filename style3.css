@@ -1,0 +1,133 @@
+a{
+	text-decoration: none;
+}
+
+ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+	text-align: center;
+}
+
+ body{
+	margin: 0;
+	padding: 0;
+	background: #FFDAE9;
+ }
+ 
+.main-header {
+	height: 10vh;
+	background: lavender;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+	color: black;
+	font-family: bold;
+	border: 2px black solid;
+	box-shadow: 0 0 10px #9f8260;
+}
+
+.slideshow{
+	position: relative;
+	border: 2px black solid;
+	box-shadow: 0 0 10px #9f8260;
+	height: 80vh;
+	width: 69vw;
+	margin: 50px auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.slide{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+
+.slide1{
+	background-image: url(image/1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation: disolveRound 20s linear infinite;
+}
+
+.slide2{
+	background-image: url(image/2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation: disolveRound 20s linear infinite 5s;
+}
+
+.slide3{
+	background-image: url(image/3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation: disolveRound 20s linear infinite 10s;
+}
+
+@keyframes disolveRound{
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+}
+
+.menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 30px;
+	padding: 20px;
+}
+
+li {
+	padding: 5px;
+	text-align: center;
+	font-family: Impact;
+	border-radius: 6px;
+	list-style: none;
+	font-size: 20px;
+	color: black;
+	background: linear-gradient(to right, gray,white,gray);
+}
+
+li:hover {
+	background: linear-gradient(to right, #89CFF0,pink,#B19CD9);
+	color: black;
+}
+
+.main{
+	padding: 5px;
+	background: lightgreen;
+	margin-bottom: 10px;
+}
+
+
+.main-article{
+	height: 50vh;
+	width: 70vw;
+	background: lavender;
+	box-shadow: 0 0 10px #9f8260;
+	border: 2px black solid;
+	margin-bottom: 10px;
+	margin-left: 160px;
+	padding: 30px;
+}
+
+pre{
+	text-align: center;
+	font-size: 25px;
+}
+
+p{
+	font-size: 20px;
+	text-align: center;
+}
